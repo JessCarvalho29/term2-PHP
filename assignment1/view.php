@@ -40,7 +40,6 @@
 
               $DBreturn = $database->getData();
             ?>
-            <!-- add our table headings -->
             <tr>
               <th>Quantity</th>
               <th>Size</th>
@@ -51,7 +50,6 @@
               <th>Name</th>
               <th>Phone</th>
             </tr>
-            <!-- now run our loop to display our query -->
             <?php
             while($result = mysqli_fetch_assoc($DBreturn)){
               echo "<tr>";
